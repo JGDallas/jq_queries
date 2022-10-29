@@ -1,0 +1,2 @@
+curl 'https://api.github.com/repos/datahub-project/datahub/commits?per_page=5' | jq '[.[] | {message: .commit.message, name: .commit.committer.name}]'
+
